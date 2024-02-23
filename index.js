@@ -1,3 +1,4 @@
+
 import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
@@ -42,7 +43,7 @@ app.post("/api/ai-content/", async (req, res) => {
   res.status(201).json({ output: content });
 });
 
-const port = process.env.PORT || 6002;
+const port = process.env.PORT || 6001;
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
